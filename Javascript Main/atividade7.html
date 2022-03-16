@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var input01 = parseInt(prompt("Me informe um valor: "));
+        var input02 = parseInt(prompt("Me informe um segundo valor: "));
+        var input03 = parseInt(prompt("Me informe um terceiro valor: "));
+        var input04 = parseInt(prompt("Me informe um quarto valor: "));
+        maiorx = 0;
+
+        if(input01 > input02 && input01 > input03 && input01 > input04){
+            maiorx = input01;
+        }
+        if(input02 > input01 && input02 > input03 && input02 > input04){
+            maiorx = input02;
+        }
+        if(input03 > input02 && input03 > input01 && input03 > input04){
+            maiorx = input03;
+        }
+        if(input04 > input02 && input04 > input03 && input04 > input01){
+            maiorx = input04;
+        }
+
+        alert("O primeiro numero é " + input01 + " ,o quarto numero é " + input04 + ", e o maior de todos os valores é " + maiorx);
+
+    </script>
+</body>
+</html>

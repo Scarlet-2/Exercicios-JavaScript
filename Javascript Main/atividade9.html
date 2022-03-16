@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        var soma = 0;
+        var numeros = "";
+
+        var num01 = parseInt(prompt("Me informe um numero: "));
+        var num02 = parseInt(prompt("Me informe um segundo numero: "));
+        var num03 = parseInt(prompt("Me informe um terceiro numero: "));
+        var num04 = parseInt(prompt("Me informe um quarto numero: "));
+        var num05 = parseInt(prompt("Me informe um quinto numero:"));
+        var num06 = parseInt(prompt("Me informe um sexto numero: "));
+
+        for (var i = 0; i < 7; i++) {
+            var num = parseInt(prompt("Me informe um numero: "));
+            if (num < 72) {
+                soma += num;
+            }
+            var numeros = numeros + num;
+        }
+
+        alert("" + numeros)
+
+
+    </script>
+</body>
+
+</html>
