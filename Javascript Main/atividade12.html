@@ -20,7 +20,15 @@
         O usuário deve informar a quantidade de quilômetros total do circuito e a quantidade de litros que o carro pode possuir. 
         */
 
-        
+        var comprimento_pista = parseInt(prompt("Qual o comprimento da pista em metros: "));
+        var voltas = parseInt(prompt("Quantas voltas serão percorridas: "));
+        var reabastecimentos = parseInt(prompt("Quantidade de vezes sera reabastecido?: "));
+        var consumo_cb = parseInt(prompt("Qantidade de consumo de combustivel(km/L): "));
+        var voltas_parada = voltas / reabastecimentos;
+        var reabastecimentos1 = voltas_parada * (comprimento_pista);
+
+        alert("O total de combustivel até o primeiro reabastecimento é: " + reabastecimentos1 + " Litros");
+
     </script>
 </body>
 
