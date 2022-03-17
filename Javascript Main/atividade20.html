@@ -20,6 +20,24 @@
 
         Caso o número de lados seja inferior a 3 escrever NÃO É UM POLÍGONO. 
         Caso o número de lados seja superior a 5 escrever POLÍGONO NÃO IDENTIFICADO.*/
+
+        var lados = parseInt(prompt("Me informe o numero de lados: "));
+        var medida_lados = parseInt(prompt("Me informe a medida dos lados(cm): "));
+
+        if (lados == 3) {
+            alert("TRIÂNGULO");
+            var perímetro = medida_lados * 3;
+            alert("O valor do perimetro do triângulo é: " + perímetro + "cm");
+        }
+        else if (lados == 4) {
+            alert("QUADRADO");
+            var area = medida_lados * medida_lados;
+            alert("O valor da area do seu quadrado é igual a: " + area + "cm2");
+        }
+        else if (lados == 5) {
+            alert("PENTÁGONO");
+        };
+
     </script>
 </body>
 

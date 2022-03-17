@@ -11,7 +11,36 @@
 <body>
     <script>
         /*23 - Faça um programa em que o usuário informe 20 valores e no final, escreva o maior e o menor valor lido.*/
-        
+
+        var menor = parseInt(100000);
+        var maior = parseInt(-100000);
+        var tabela_de_valores = [];
+        var contador = 0;
+
+        // Passar com as 20 perguntas e passar para a lista
+        for (var i = 0; i < 21; i++) {
+            var input01 = parseInt(prompt("Me informe um valor: "));
+            contador = input01;
+            tabela_de_valores.push(contador);
+        };
+
+        // Olhar para cada elemento da lista
+        tabela_de_valores.forEach(valor => {
+            alert("Valor de array: " + valor)
+
+            if (valor > maior) {
+                maior = valor
+            }
+
+            if (valor < menor) {
+                menor = valor
+            };
+
+        });
+        alert("Maior: " + maior);
+        alert("Menor: " + menor);
+
+
     </script>
 </body>
 

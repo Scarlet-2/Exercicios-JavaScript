@@ -12,6 +12,44 @@
     <script>
         /*24 - Um zoológico muito louco
         Escreva um programa que leia a idade de 2 javalis e 2 girafas (considere que a idade dos javalis será sempre diferente, assim como das girafas ). Calcule e escreva a soma das idades do javali mais velho com a girafa mais nova, e o produto das idades do javali mais novo com a girafa mais velha.*/
+
+        var maior_girafa = -1000;
+        var menor_girafa = 1000;
+
+        var maior_javali = -1000;
+        var menor_javali = 1000;
+
+        // Pegar as duas idades dos javalis
+        for (var i = 0; i < 2; i++) {
+            var input01 = parseInt(prompt("Me informe a idade do javali: "));
+            if (input01 > maior_javali) {
+                maior_javali = input01;
+            };
+            if (input01 < menor_javali) {
+                menor_javali = input01;
+            }
+        };
+
+        // Pegar as udas idades das girafas
+        for (var i = 0; i < 2; i++) {
+            var input02 = parseInt(prompt("Me informe a idade do girafa: "));
+            if (input02 > maior_girafa) {
+                maior_girafa = input02;
+            };
+            if (input02 < menor_girafa) {
+                menor_girafa = input02;
+            }
+        };
+
+        // m = 3, mn = 3 = 6
+        // mn = 2, m = 5 = 10
+        var soma = maior_javali + menor_girafa;
+        var produto = menor_javali * maior_girafa;
+
+        alert("Soma: " + soma);
+        alert("Produto: " + produto);
+
+
     </script>
 </body>
 

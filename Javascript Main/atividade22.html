@@ -11,6 +11,13 @@
 <body>
     <script>
         /*22. A Loja Remi du Fromage está com uma promoção onde cada capacete artesanal para tartaruga custa R$18.230 e pode ser pago em até 15 vezes sem juros. Crie um programa onde o usuário possa informar o valor parcelas que deseja pagar e exiba o valor de cada parcela.*/
+
+        var valor_de_parcelas = parseInt(prompt("O valor do capacete artesanal é R$18.230, em quantas parcelas você deseja pagar?: "));
+
+        var parcelas = 18.230 / valor_de_parcelas;
+
+        alert("Cada parcela ficara: R$" + parcelas);
+
     </script>
 </body>
 

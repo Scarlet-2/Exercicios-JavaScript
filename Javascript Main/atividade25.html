@@ -15,6 +15,36 @@
         executadas (codificada da seguinte forma: 1.Adição, 2.Subtração, 3.Divisão, 4.Multiplicação).
         O programa deve calcular e escrever o resultado dessa operação sobre os dois valores lidos. Observação: Considere
         que só serão lidos os valores 1, 2, 3 ou 4 para as operações*/
+
+        var resposta = false;
+
+        while (resposta != true) {
+            var input01 = parseInt(prompt("Me informe um valor: "));
+            var inptu02 = parseInt(prompt("Me informe um segundo valor: "));
+            var escolha = parseInt(prompt("Indique umas das escolhas usando os numeros indicados: \n(1.Adição)-(2.Subtração)-(3.Divisão)-(4.Multiplicação)-(5.Sair): "));
+
+            if (escolha == 1) {
+                var soma = input01 + inptu02;
+                alert("A adição dos dois numeros é igual a: " + soma);
+
+            } else if (escolha == 2) {
+                var subtracao = input01 - inptu02;
+                alert("A subtração dos dois numeros é igual a: " + subtracao);
+
+            } else if (escolha == 3) {
+                var divisao = input01 / inptu02;
+                alert("A divisão dos dois numeros é igual a: " + divisao);
+
+            } else if (escolha == 4) {
+                var multi = input01 * inptu02;
+                alert("A multiplicação dos dois numeros é igual a: " + multi);
+
+            } else if (escolha == 5) {
+                resposta = true;
+            }
+        }
+
+
     </script>
 </body>
 
