@@ -25,7 +25,7 @@
         var reabastecimentos = parseInt(prompt("Quantidade de vezes sera reabastecido?: "));
         var consumo_cb = parseInt(prompt("Qantidade de consumo de combustivel(km/L): "));
         var voltas_parada = voltas / reabastecimentos;
-        var reabastecimentos1 = voltas_parada * (comprimento_pista);
+        var reabastecimentos1 = (voltas_parada * comprimento_pista) / reabastecimentos;
 
         alert("O total de combustivel até o primeiro reabastecimento é: " + reabastecimentos1 + " Litros");
 
