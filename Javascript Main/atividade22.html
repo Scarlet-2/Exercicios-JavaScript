@@ -12,11 +12,32 @@
     <script>
         /*22. A Loja Remi du Fromage está com uma promoção onde cada capacete artesanal para tartaruga custa R$18.230 e pode ser pago em até 15 vezes sem juros. Crie um programa onde o usuário possa informar o valor parcelas que deseja pagar e exiba o valor de cada parcela.*/
 
-        var valor_de_parcelas = parseInt(prompt("O valor do capacete artesanal é R$18.230, em quantas parcelas você deseja pagar?: "));
+        var numero_1 = parseInt(prompt("Olá! vamos hoje calcular a media de 4 numeros e ver se você passa no teste? digite um numero de sua escolha:"));
+        var numero_2 = parseInt(prompt("digite um numero de sua escolha:"));
+        var numero_3 = parseInt(prompt("digite um numero de sua escolha:"));
+        var numero_4 = parseInt(prompt("digite um numero de sua escolha:"));
 
-        var parcelas = 18.230 / valor_de_parcelas;
 
-        alert("Cada parcela ficara: R$" + parcelas.isFixed(3));
+        var soma = 0;
+
+        if (numero_1 > 0 && numero_1 < 10){
+            soma += numero_1;
+        }
+        if (numero_2 > 0 && numero_2 < 10){
+            soma += numero_2;
+        }
+        if (numero_3 > 0 && numero_3 < 10){
+            soma += numero_3;
+        }
+        if (numero_4 > 0 && numero_4 < 10){
+            soma += numero_4;
+        }
+
+        var media = soma / 4
+
+        if(media > 5){
+            alert ("o valor de sua soma foi de: " + media + "Você passou no teste")
+        }else {alert ("o valor de sua soma foi de: " + media + " tente novamente")}
 
     </script>
 </body>
